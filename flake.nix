@@ -98,9 +98,9 @@
           mkdir $out/share/mime/packages
           mv bin/aseprite $out/bin
           mv bin/* $out/share/aseprite
-          mv $curDir/aseprite.desktop $out/share/applications/
-          mv $curDir/aseprite.xml $out/share/mime/packages/
-          '';
+          mv ${./aseprite.desktop} $out/share/applications/
+          mv ${./aseprite.xml} $out/share/mime/packages/
+        '';
       };
     }
   );
