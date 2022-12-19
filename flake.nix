@@ -92,9 +92,15 @@
           mkdir $out
           mkdir $out/bin
           mkdir $out/share
+          mkdir $out/share/aseprite
+          mkdir $out/share/applications
+          mkdir $out/share/mime
+          mkdir $out/share/mime/packages
           mv bin/aseprite $out/bin
-          mv bin/* $out/share/
-        '';
+          mv bin/* $out/share/aseprite
+          mv $curDir/aseprite.desktop $out/share/applications/
+          mv $curDir/aseprite.xml $out/share/mime/packages/
+          '';
       };
     }
   );
