@@ -17,14 +17,14 @@
       };
       aseprite-src = pkgs.fetchzip {
         url = "https://github.com/aseprite/aseprite/releases/download/v1.2.40/Aseprite-v1.2.40-Source.zip";
-        hash = "sha256-zWfq807hmuVYT5BS87OF3PpBIy84AWuvCHI7mHrlg/s=";
+        hash = "sha256-L1blSIronRn6gSURYw1AvOBsK238OLk3rAyqubhxE1M=";
         stripRoot = false;
       };
     in {
       packages."x86_64-linux".default = stdenv.mkDerivation {
         name = "aseprite";
         version = "1.2.40";
-        src = /. + "${aseprite-src}";
+        src = "${aseprite-src}";
         nativeBuildInputs = with pkgs; [
           clang
           cmake
