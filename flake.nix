@@ -91,7 +91,9 @@
         installPhase = ''
           mkdir $out
           mkdir $out/bin
+          mkdir $out/share
           mv bin/aseprite $out/bin
+          mv bin/* $out/share/
         '';
       };
     }
