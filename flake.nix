@@ -98,8 +98,8 @@
           mkdir $out/share/mime/packages
           mv bin/aseprite $out/bin
           mv bin/* $out/share/aseprite
-          mv ${./aseprite.desktop} $out/share/applications/
-          mv ${./aseprite.xml} $out/share/mime/packages/
+          cp ${./aseprite.desktop} $out/share/applications/
+          cp ${./aseprite.xml} $out/share/mime/packages/
         '';
       };
     }
