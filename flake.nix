@@ -17,7 +17,7 @@
       };
       aseprite-src = pkgs.fetchzip {
         url = "https://github.com/aseprite/aseprite/releases/download/v1.3.6/Aseprite-v1.3.6-Source.zip";
-        hash = "sha256-17f6pIGsOIswnyY63pjHKEEYuCo43kf25mPLBv4vQAs=";
+        hash = "sha256-g6anBWHco7EruwupzVOjPwUg+MSstAEYVVRnEfHYgH4=";
         stripRoot = false;
       };
     in {
